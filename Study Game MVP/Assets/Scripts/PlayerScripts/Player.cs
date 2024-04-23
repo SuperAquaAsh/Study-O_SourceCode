@@ -272,6 +272,9 @@ public class Player : NetworkBehaviour
 
         GameManager.instance.SetGameStart(true);
 
+        //Start the music
+        MusicManager.instance.SetMusic(1, 0.1f);
+
         TransitionManager.instance.SetTransition(false);
 
         //Just start the points at 0
